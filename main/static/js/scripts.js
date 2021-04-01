@@ -18,8 +18,6 @@ year.textContent = currentYear.toString();
 prevMonthDOM.addEventListener('click', ()=>lastMonth());
 nextMonthDOM.addEventListener('click', ()=>nextMonth());
 
-
-
 const writeMonth = (month) => {
 
     for(let i = startDay(); i>0;i--){
