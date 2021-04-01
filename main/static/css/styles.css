@@ -37,6 +37,7 @@
     background-color: rgb(25, 25, 25);
     display: inline-block;
     width: 105px;
+    height: 125px;
 }
 
 .user-settings__h1 {
@@ -58,7 +59,7 @@
     height: 750px;
 }
 
-.tags-box {
+.tags-content-box {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -73,6 +74,28 @@
     height: 684px;
     margin: 15px;
     border-image: linear-gradient(to bottom, rgb(67, 184, 264), rgba(0, 0, 0, 0)) 1 100%;
+    padding-left: 10px;
+}
+
+.tags-box {
+    margin-top: 100px;
+    margin-left: 15px;
+    color: white;
+}
+
+.tag {
+    font-family: 'Blinker', sans-serif;
+    font-size: 20px;
+    color: black;
+    margin: 20px 0px;
+    background-color: rgb(67, 184, 264);
+    border-color: rgb(67, 184, 264);
+    border-style: solid;
+    border-width: 1px;
+    width: 250px;
+    height: 35px;
+    padding-top: 5px;
+    padding-left: 5px;
 }
 
 .button-box {
@@ -103,6 +126,7 @@
     font-weight: 700;
     cursor: pointer;
   }
+  
   .btn::before {
     content: "";
     position: absolute;
@@ -116,7 +140,7 @@
   }
 
   .btn--1:hover {
-    background-color: rgb(67, 184, 264);
+    background-color: white;
     box-shadow: 0 0 10px rgb(67, 184, 264), 0 0 20px rgb(67, 184, 264), 0 0 20px rgb(67, 184, 264);
     color: black;
   }
