@@ -1,0 +1,289 @@
+@import url("https://fonts.googleapis.com/css?family=Barlow|Tomorrow:400,700&display=swap");
+
+.logo-style {
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0);
+    margin: 25px;
+    margin-left: 0px;
+    width: 75px;
+}
+
+.titlebar {
+    font-size: 25px;
+    background-color:rgb(25, 25, 25);
+    display: inline-block;
+    width: 1800px;
+}
+
+.titlebar__h1 {
+    display: inline-block;
+    font-size: 2em;
+    font-family: 'Blinker', sans-serif;
+    color: rgb(67, 184, 264);
+    padding: 0px 10px 0px 10px;
+}
+
+.titlebar__h2 {
+    display: inline-block;
+    font-size: 2em;
+    font-family: 'Blinker', sans-serif;
+    color: rgb(116, 116, 116);
+    padding: 0px 5px;
+}
+
+.user-settings {
+    position: absolute;
+    font-size: 25px;
+    background-color: rgb(25, 25, 25);
+    display: inline-block;
+    width: 105px;
+    height: 125px;
+}
+
+.user-settings__h1 {
+    font-size: 2em;
+    font-family: 'Blinker', sans-serif;
+    color: rgb(255, 255, 255);
+    padding: 0px 30px;
+}
+
+.content-box {
+    position: relative;
+    border-style: solid;
+    border-bottom-style: none;
+    border-left-style: none;
+    border-right-style: none;
+    background: linear-gradient(to bottom,rgb(25, 25, 25) 96%, rgb(67, 184, 264) 99%, white);
+    border-color: rgb(67, 184, 264);
+    width: 1905px;
+    height: 750px;
+}
+
+.tags-content-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    border-color: rgb(67, 184, 264);
+    border-style: solid;
+    border-width: 2px;
+    border-bottom-style: none;
+    background: linear-gradient(to bottom,rgb(25, 25, 25), rgb(40, 40, 40) 50%, rgb(25, 25, 25));
+    display: inline-block;
+    width: 400px;
+    height: 684px;
+    margin: 15px;
+    border-image: linear-gradient(to bottom, rgb(67, 184, 264), rgba(0, 0, 0, 0)) 1 100%;
+    padding-left: 10px;
+}
+
+.tags-box {
+    margin-top: 100px;
+    margin-left: 15px;
+    color: white;
+    z-index: 600;
+}
+
+.tag {
+    position: relative;
+    font-family: 'Blinker', sans-serif;
+    font-size: 0px;
+    color: black;
+    margin: 20px 0px;
+    background: linear-gradient(to left,rgba(0, 0, 0, 0), rgb(67, 184, 264) 10%, rgba(255, 255, 255, 1) 15%);
+    width: 120px;
+    height: 35px;
+    padding-top: 5px;
+    padding-left: 10px;
+    transition: all 1s;
+    z-index: 700;
+}
+
+.tag:hover {
+    width: 350px;
+    font-size: 20px;
+}
+
+.button-box {
+    position: absolute;
+    background-color: transparent;
+    width: 370px;
+    height: 100px;
+    margin-top: 15px;
+}
+
+.btn {
+    font-family: Tomorrow, sans-serif;
+    position: relative;
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    border-radius: 4px;
+    text-transform: uppercase;
+    background-color: transparent;
+    color:rgb(67, 184, 264);
+    font-size: 18px;
+    overflow: hidden;
+    transition: all 500ms ease;
+    border: 2px solid rgb(67, 184, 264);
+    margin-bottom: 15px;
+    margin-left: 15px;
+    z-index: 200;
+    font-weight: 700;
+    cursor: pointer;
+  }
+  
+  .btn::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    margin: auto;
+    background-color:rgb(67, 184, 264);
+    transition: all 500ms ease;
+    z-index: 10;
+  }
+
+  .btn--1:hover {
+    background-color: white;
+    box-shadow: 0 0 10px rgb(67, 184, 264), 0 0 20px rgb(67, 184, 264), 0 0 20px rgb(67, 184, 264);
+    color: black;
+  }
+
+
+.calendar-box {
+    font-family: 'Blinker', sans-serif;
+    position: absolute;
+    border-color: rgb(67, 184, 264);
+    border-style: solid;
+    border-width: 2px;
+    border-bottom-style: none;
+    background: linear-gradient(to bottom,rgb(25, 25, 25), rgb(40, 40, 40) 50%, rgb(25, 25, 25));
+    display: inline-block;
+    color: white;
+    width: 1358px;
+    height: 684px;
+    margin: 15px;
+    margin-left: 10px;
+    border-image: linear-gradient(to bottom, rgb(67, 184, 264), rgba(0, 0, 0, 0)) 1 100%;
+}
+
+.calendar__info {
+    display: flex;
+    align-items: center;
+    padding: 0 2em;
+    font-size: 1.5em;
+    text-transform: uppercase;
+}
+
+.calendar__prev, .calendar__next {
+    cursor: pointer;
+    font-size: 1.5em;
+    z-index: 110;
+}
+
+.calendar__prev {
+    margin-right: auto;
+}
+
+.calendar__next {
+    margin-left: auto;
+}
+
+.calendar__week, .calendar__dates{
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    grid-gap: 80px 10px;
+}
+
+.calendar__prev::before, .calendar__next::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    margin: auto;
+    background-color: rgb(67, 184, 264);
+    transition: all 500ms ease;
+}
+
+.calendar__prev--1:hover, .calendar__next--1:hover {
+    color: rgb(67, 184, 264);
+}
+
+.calendar__month, .calendar__year {
+    padding: .5em 1em;
+}
+
+.calendar__item {
+    text-align: center;
+    line-height: 2;
+}
+
+.calendar__today {
+    background: white;
+    color: black;
+    z-index: 500;
+    cursor: pointer;
+}
+
+.calendar__today::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    margin: auto;
+    background-color: rgb(67, 184, 264);
+    transition: all 500ms ease;
+}
+
+.calendar__today:hover {
+    background-color:  white;
+    box-shadow: 0 0 10px rgb(67, 184, 264), 0 0 20px rgb(67, 184, 264), 0 0 20px rgb(67, 184, 264);
+    color: black;
+}
+
+.fog-container {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: 100;
+}
+
+.fog-img {
+    position: absolute;
+    height: 150vh;
+    width: 300vw;
+    z-index: 150;
+}
+
+.fog-img-first {
+    background: url('../fog-1.png');
+    background-repeat: repeat-x;
+    background-size: cointain;
+    background-position: center;
+    animation: marquee 90s linear infinite;
+}
+
+@keyframes marquee {
+    0% {
+        transform: translate3d(0,0,0);
+    }
+
+    100% {
+        transform: translate3d(-200vw,0,0);
+    }
+}
+
+.footer-style {
+    font-size: 18px;
+    background-color: white;
+    display: inline-block;
+    width: 1905px;
+    height: 50px;
+    padding: 50px;
+    z-index: 260;
+}

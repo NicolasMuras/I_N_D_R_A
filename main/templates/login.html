@@ -16,14 +16,9 @@
         </div>
         <div class="content-box">
             <div class="login-box">
-            <form class="form-siging" method="POST">
-                    {% csrf_token %}
-                    <label for="inputEmail" class="form-signin">Usuario :</label>
-                    <p>{{form.username}}</p>
-                    <label for="inputPassword " class="form-signin">Contraseña :</label>
-                    <p>{{form.password}}</p>
+                <input class="input-obj" placeholder="Usuario">
+                <input class="input-obj" type="password" placeholder="Contraseña">
                 <button class="btn-login btn--1" type="submit">L O G I N</button>
-            </form>
             </div>
             <div class="fog-container">
                 <div class="fog-img fog-img-first"></div>
