@@ -1,6 +1,9 @@
 from django.urls import path
 from main.views import schedule_view
+from django.contrib.auth.decorators import login_required
+
+
 
 urlpatterns = [
-    path('', schedule_view, name = 'schedule_view'),
-]
+    path('',login_required(schedule_view), name='schedule_view'),
+]   
