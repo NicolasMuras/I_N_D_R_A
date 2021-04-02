@@ -81,21 +81,27 @@
     margin-top: 100px;
     margin-left: 15px;
     color: white;
+    z-index: 600;
 }
 
 .tag {
+    position: relative;
     font-family: 'Blinker', sans-serif;
-    font-size: 20px;
+    font-size: 0px;
     color: black;
     margin: 20px 0px;
-    background-color: rgb(67, 184, 264);
-    border-color: rgb(67, 184, 264);
-    border-style: solid;
-    border-width: 1px;
-    width: 250px;
+    background: linear-gradient(to left,rgba(0, 0, 0, 0), rgb(67, 184, 264) 10%, rgba(255, 255, 255, 1) 15%);
+    width: 120px;
     height: 35px;
     padding-top: 5px;
-    padding-left: 5px;
+    padding-left: 10px;
+    transition: all 1s;
+    z-index: 700;
+}
+
+.tag:hover {
+    width: 350px;
+    font-size: 20px;
 }
 
 .button-box {
