@@ -13,7 +13,7 @@ class User(models.Model):
     tags = models.ForeignKey(Tag, on_delete=models.CASCADE, blank=True, null=True)
     
     class Meta:
-        verbose_name = "Users"
+        verbose_name = "User"
         
     def __str__(self):
         return self.name

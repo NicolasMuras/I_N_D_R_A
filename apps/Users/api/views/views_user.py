@@ -1,4 +1,3 @@
-from rest_framework.response import Response
 from apps.Users.api.serializers.tags_serializers import UserSerializers
 from rest_framework import viewsets
 
