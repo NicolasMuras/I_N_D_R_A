@@ -1,5 +1,5 @@
 from django.shortcuts import render
-from main.forms import UsuarioForm
+from apps.main.forms import UsuarioForm
 
 def schedule_view(request):
 

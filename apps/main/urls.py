@@ -1,5 +1,5 @@
 from django.urls import path
-from main.views import schedule_view
+from apps.main.views import schedule_view
 from django.contrib.auth.decorators import login_required
 
 
