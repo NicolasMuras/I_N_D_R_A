@@ -10,8 +10,8 @@ class Tag(models.Model):
         max_length=200, verbose_name="Color", blank=True, null=True
         )
     hour = models.CharField(
-        max_length=200, verbose_name="Hora"), blank=True, null=True
-    )
+        max_length=200, verbose_name="Hora", blank=True, null=True
+        )
     day = models.CharField(
         max_length=200, verbose_name="Dia", blank=True, null=True
         )

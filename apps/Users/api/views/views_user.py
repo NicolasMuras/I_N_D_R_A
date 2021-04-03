@@ -1,4 +1,4 @@
-from apps.Users.api.serializers.tags_serializers import UserSerializers
+from apps.Users.api.serializers.user_serializers import UserSerializers
 from rest_framework import viewsets
 
 
