@@ -1,5 +1,5 @@
 from django.db import models
-from apps.Tags.models import Tag
+from apps.tags.models import Tag
 
 
 

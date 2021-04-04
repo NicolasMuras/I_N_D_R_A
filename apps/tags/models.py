@@ -22,10 +22,11 @@ class Tag(models.Model):
         max_length=200, verbose_name="Año", blank=False, null=False
         )
     priority = models.CharField(
-        max_length=200, verbose_name="Prioridad", blank=False, null=False
+        max_length=200, verbose_name="Prioridad", blank=True, null=True
         )
     
     class Meta:
         verbose_name = "Tag"
+        
     def __str__(self):
         return self.name

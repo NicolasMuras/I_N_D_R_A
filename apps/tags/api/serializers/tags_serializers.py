@@ -1,5 +1,7 @@
 from rest_framework import serializers
-from apps.Tags.models import Tag
+from apps.tags.models import Tag
+
+
 
 class TagSerializers(serializers.ModelSerializer):
     class Meta:
