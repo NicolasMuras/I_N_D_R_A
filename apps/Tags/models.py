@@ -12,15 +12,7 @@ class Tag(models.Model):
     hour = models.CharField(
         max_length=200, verbose_name="Hora", blank=False, null=False
         )
-    day = models.CharField(
-        max_length=200, verbose_name="Dia", blank=False, null=False
-        )
-    month = models.CharField(
-        max_length=200, verbose_name="Mes", blank=False, null=False
-        )
-    year = models.CharField(
-        max_length=200, verbose_name="Año", blank=False, null=False
-        )
+    date = models.DateField(verbose_name="Fecha")
     priority = models.CharField(
         max_length=200, verbose_name="Prioridad", blank=False, null=False
         )
