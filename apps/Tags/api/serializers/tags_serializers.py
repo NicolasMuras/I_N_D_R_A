@@ -1,6 +1,5 @@
 from rest_framework import serializers
 from apps.Tags.models import Tag
-from datetime import datetime
 
 
 
