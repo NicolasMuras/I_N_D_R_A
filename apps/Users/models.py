@@ -11,7 +11,7 @@ class User(models.Model):
         max_length=200, verbose_name="Contraseña", blank=False, null=False
         )
     tags = models.ForeignKey(
-        Tag, on_delete=models.CASCADE, blank=True, null=True
+        Tag, on_delete=models.CASCADE, blank=True, null=True, related_name='user_tags'
         )
   
     class Meta:

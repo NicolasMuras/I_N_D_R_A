@@ -6,8 +6,9 @@ from apps.Tags.models import Tag
 class TagSerializers(serializers.ModelSerializer):
     class Meta:
         model = Tag
-        fields = '__all__'
-    #Custom Validations
+        fields = ( '__all__')
+        
+        #Custom Validations
     def validate_colour(self,value):
         colours = [
             "red", "green", "blue", "yellow", "lightblue", "black", 
