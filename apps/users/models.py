@@ -10,7 +10,9 @@ class User(models.Model):
     password = models.CharField(
         max_length=200, verbose_name="Contraseña", blank=False, null=False
         )
-    tags = models.ManyToManyField(Tag)
+    tags = models.ForeignKey(
+        Tag, on_delete=models.CASCADE, blank=True, null=True
+        )
   
     class Meta:
         verbose_name = "User"
